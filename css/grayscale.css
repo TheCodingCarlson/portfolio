@@ -386,3 +386,9 @@ body {
 .project-content {
     text-align: left;
 }
+
+.project-links {
+    color: white;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
