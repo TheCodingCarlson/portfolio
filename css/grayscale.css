@@ -324,6 +324,15 @@ ul.banner-social-buttons {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
+
+    .project-img {
+        margin-bottom: 15px;
+    }
+
+    #work {
+        margin-top: 15px;
+        margin-bottom: -20px;
+    }
 }
 
 footer {
