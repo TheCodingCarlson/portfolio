@@ -8,6 +8,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     color: #537189;
     background-color: white;
 }
@@ -25,7 +26,7 @@ h5,
 h6 {
     margin: 0 0 25px 0;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -38,7 +39,7 @@ p {
 
 @media(min-width:768px) {
     p {
-        margin: 0 0 35px;
+        margin: 0 0 20px;
         font-size: 20px;
         line-height: 1.6;
     }
@@ -65,7 +66,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
     background-color: #6d8295;
 }
 
@@ -280,8 +281,8 @@ a:focus {
 
 .about {
     font-size: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 @media(min-width:767px) {
@@ -325,10 +326,6 @@ ul.banner-social-buttons {
         margin-bottom: 0;
     }
 
-    .project-img {
-        margin-bottom: 15px;
-    }
-
     #work {
         margin-top: 15px;
         margin-bottom: -20px;
@@ -370,7 +367,6 @@ body {
 }
 
 .project-img {
-    padding-right: 50px;
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);  /* For Webkit browsers */
     filter: none;  /* For IE 6 - 9 */
@@ -398,5 +394,28 @@ body {
 
 .project-links {
     color: white;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.tech-used {
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 400;
+}
+
+@media(max-width: 992px) {
+    .project-img {
+        padding-bottom: 50px;
+    }
+
+    .project-row {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 540px) {
+    .project-row {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
