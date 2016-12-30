@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
+    <!-- Meta Data -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Portfolio for Seattle based full-stack web developer, Chris Carlson">
+    <meta name="keywords" content="web development, web developer, full-stack, front-end, seattle, rational interaction, design, responsive web">
+    <meta name="author" content="Chris Carlson - Web Developer">
 
-    <title>Chris Carlson</title>
+    <!-- Title and Favicon -->
+    <title>Chris Carlson - Web Dev</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/laptop_favicon.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,10 +20,12 @@
     <link href="css/grayscale.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,7 +33,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -93,25 +96,49 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <img id='me' src='img/me.jpg' />
-                <h2>About</h2>
-                <p id="about">Whether it's playing music or writing code, I am always creating. A drummer turned web dev, I feel that my musical background gives me a unique perspective on the tech industry. I love collaboration and creating as a team. Technologies I have experience with include Javascript, HTML, CSS, jQuery, NodeJS, Express, AngularJS, Ruby, Rails, Postgres and SQL.</p>
+                <img id="me" src="img/me.jpg" />
+                <h2>Who Am I?</h2>
 
-                <p id="about">When I'm not coding you can find me playing music, enjoying the outdoors, or gaming.</p>
+                <p class="about">Whether it's playing music or writing code, I am always creating. A drummer turned web dev, I feel that my musical background gives me a unique perspective on the tech industry. I love collaboration and creating as a team. Technologies I have experience with include Javascript, HTML, CSS, jQuery, NodeJS, Express, AngularJS, React, Ruby, Rails, Postgres and SQL.</p>
 
-                <p id="about"><b>CURRENTLY LEARNING:</b> ReactJS and Sass</p>
+                <p class="about">Currenty I work as a Front-End Dev at <a href="http://rationalagency.com/" target="_blank">Rational Interaction</a> in Seattle, WA. When I'm not coding you can find me playing music, enjoying the outdoors, or gaming.</p>
+
+                <p class="about"><b>CURRENTLY LEARNING:</b> VueJS, SCSS, ES6</p>
             </div>
         </div>
     </section>
 
-    <!-- Download Section -->
+    <!-- Work Section -->
     <section id="work" class="content-section text-center">
         <div class="download-section">
             <div class="container">
                 <h2 id="work">Work</h2>
+
                 <div class="project-row row">
                     <div class="col-md-5">
-                        <a href="https://harmonize2.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/harmonize.png" /></a>
+                        <a href="http://www.microsoftpartnersolutions.com/" target="_blank"><img class="img-responsive project-img" src="img/work/modern_retailer.png" /></a>
+                    </div>
+                    <div class="project-content col-md-6">
+                        <h3>Microsoft Partner Solutions</h3>
+                        <p>A portal site created to help direct business towards various MSFT partners. I</p>
+                    </div>
+                </div>
+
+                <div class="project-row row">
+                    <div class="col-md-5">
+                        <a href="https://www.acer.com/ac/en/US/content/keep-asking" target="_blank"><img class="img-responsive project-img" src="img/work/acer.png" /></a>
+                    </div>
+                    <div class="project-content col-md-6">
+                        <h3>Acer Keep Asking</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <h2 id="work">Projects/For Fun</h2>
+
+                <div class="project-row row">
+                    <div class="col-md-5">
+                        <a href="https://harmonize2.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/harmonize.png" /></a>
                     </div>
                     <div class="project-content col-md-6">
                         <h3>Harmonize -<small><a class="project-links" href="https://github.com/TheCodingCarlson/harmonize"> Github Repo</a></small></h3>
@@ -120,7 +147,7 @@
                 </div>
                 <div class="project-row row">
                     <div class="col-md-5">
-                        <a href="https://musicians-meetup.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/mm.png" /></a>
+                        <a href="https://musicians-meetup.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/mm.png" /></a>
                     </div>
                     <div class="project-content col-md-6">
                         <h3>Musicians Meet-Up -<small><a class="project-links" href="https://github.com/TheCodingCarlson/musicians_meetup"> Github Repo</a></small></h3>
@@ -129,7 +156,7 @@
                 </div>
                 <div class="project-row row">
                     <div class="col-md-5">
-                        <a href="http://thecodingcarlson.github.io/Hangman/" target="_blank"><img class="img-responsive project-img grayscale" src="img/hangman.png" /></a>
+                        <a href="http://thecodingcarlson.github.io/Hangman/" target="_blank"><img class="img-responsive project-img grayscale" src="img/work/hangman.png" /></a>
                     </div>
                     <div class="project-content col-md-6">
                         <h3>Hangman -<small><a class="project-links" href="https://github.com/TheCodingCarlson/Hangman"> Github Repo</a></small></h3>
@@ -138,7 +165,7 @@
                 </div>
                 <div class="project-row row">
                     <div class="col-md-5">
-                        <a href="https://concrt.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/concrt.png" /></a>
+                        <a href="https://concrt.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/concrt.png" /></a>
                     </div>
                     <div class="project-content col-md-6">
                         <h3>Concrt -<small><a class="project-links" href="https://github.com/TheCodingCarlson/concrt"> Github Repo</a></small></h3>
@@ -147,7 +174,7 @@
                 </div>
                  <div class="project-row row">
                     <div class="col-md-5">
-                        <a href="https://lastfmd3.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/lastfm.png" /></a>
+                        <a href="https://lastfmd3.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/lastfm.png" /></a>
                     </div>
                     <div class="project-content col-md-6">
                         <h3>Last FM D3 -<small><a class="project-links" href="https://github.com/TheCodingCarlson/music-d3"> Github Repo</a></small></h3>
@@ -156,7 +183,7 @@
                 </div>
                 <div class="project-row row">
                     <div class="col-md-5">
-                        <a href="http://thecodingcarlson.github.io/jeopardy_react/" target="_blank"><img class="img-responsive project-img" src="img/jeopardy.png" /></a>
+                        <a href="http://thecodingcarlson.github.io/jeopardy_react/" target="_blank"><img class="img-responsive project-img" src="img/work/jeopardy.png" /></a>
                     </div>
                     <div class="project-content col-md-6">
                         <h3>Jeopardy React -<small><a class="project-links" href="https://github.com/TheCodingCarlson/jeopardy_react"> Github Repo</a></small></h3>
@@ -174,13 +201,13 @@
                 <h2>Contact</h2>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://github.com/TheCodingCarlson"><i class="fa fa-github-square fa-3x"></i></a>
+                        <a href="https://github.com/TheCodingCarlson" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/thecodingcarlson"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                        <a href="https://www.linkedin.com/in/thecodingcarlson" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
                     </li>
                      <li>
-                        <a href="https://www.facebook.com/christianevancarlson"><i class="fa fa-facebook-square fa-3x"></i></a>
+                        <a href="https://www.facebook.com/christianevancarlson" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
                     </li>
                     <li>
                         <a href="mailto:chris.carlson.dev@gmail.com"><i class="fa fa-envelope-square fa-3x"></i></a>
@@ -193,7 +220,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Chris Carlson 2016</p>
+            <p>Copyright &copy; Chris Carlson <span id="currentYear"></span></p>
         </div>
     </footer>
 
