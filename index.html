@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
+    <!-- Meta Data -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Portfolio for Seattle based full-stack web developer, Chris Carlson">
+    <meta name="keywords" content="web development, web developer, full-stack, front-end, seattle, rational interaction, design, responsive web">
+    <meta name="author" content="Chris Carlson - Web Developer">
 
-    <title>Chris Carlson</title>
+    <!-- Title and Favicon -->
+    <title>Chris Carlson - Web Dev</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/laptop_favicon.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,7 +33,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -93,76 +96,154 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <img id='me' src='img/me.jpg' />
-                <h2>About</h2>
-                <p id="about">Whether it's playing music or writing code, I am always creating. A drummer turned web dev, I feel that my musical background gives me a unique perspective on the tech industry. I love collaboration and creating as a team. Technologies I have experience with include Javascript, HTML, CSS, jQuery, NodeJS, Express, AngularJS, Ruby, Rails, Postgres and SQL.</p>
+                <img id="me" src="img/me.jpg" />
+                <h2>Who Am I?</h2>
 
-                <p id="about">When I'm not coding you can find me playing music, enjoying the outdoors, or gaming.</p>
+                <p class="about">Whether it's playing music or writing code, I am always creating. A drummer turned web dev, I feel that my musical background gives me a unique perspective on the tech industry. I love collaboration and creating as a team. Technologies I have experience with include Javascript, HTML, CSS, jQuery, NodeJS, Express, AngularJS, React, Ruby, Rails, Postgres and SQL.</p>
 
-                <p id="about"><b>CURRENTLY LEARNING:</b> ReactJS and Sass</p>
+                <p class="about">Currenty I work as a Front-End Developer at <a href="http://rationalagency.com/" target="_blank">Rational Interaction</a> in Seattle, WA. When I'm not coding you can find me playing music, enjoying the outdoors, or gaming.</p>
+
+                <p class="about tech-used">CURRENTLY LEARNING: VueJS, SCSS/LESS, ES6</p>
             </div>
         </div>
     </section>
 
-    <!-- Download Section -->
+    <!-- Work Section -->
     <section id="work" class="content-section text-center">
         <div class="download-section">
             <div class="container">
                 <h2 id="work">Work</h2>
+
                 <div class="project-row row">
                     <div class="col-md-5">
-                        <a href="https://harmonize2.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/harmonize.png" /></a>
+                        <a href="http://www.microsoftpartnersolutions.com/" target="_blank"><img class="img-responsive project-img" src="img/work/modern_retailer.png" /></a>
                     </div>
                     <div class="project-content col-md-6">
-                        <h3>Harmonize -<small><a class="project-links" href="https://github.com/TheCodingCarlson/harmonize"> Github Repo</a></small></h3>
-                        <p>Harmonize is a chord helper app that allows users to pick a starting note and chord quality, and from there suggests chords that would make sense to go to next in a progression. I wanted to create a tool for people that know some chords, but aren't really sure how to put them together in a practical and musical way.Users can save favorite progressions to their profile for future reference. Made using AngularJS, Express/NodeJS, MongoDB, HTML5, CSS3, JavaScript, Bootstrap and TeoriaJS.</p>
+                        <h3>The Modern Retailer -<small><a class="project-links" href="http://www.microsoftpartnersolutions.com/" target="_blank"> Live Site</a></small></h3>
+                        <p>A portal created to help direct business towards various MSFT partners. The site consists of a landing page, an assessment, and 6 partner pages. The assessment uses VueJS to dynamically take in user input and create percentages on how effective their business is in a certain category. I was responsible for the front-end code, making sure that the creative team's design came to life in a practical and meaningful way.</p>
+
+                        <p class="tech-used">Tech Used: HTML5, LESS, JS, Bootstrap4, JQuery, VueJS, Handlebars, Gulp, Roots, Contentful and ParsleyJS</p>
                     </div>
                 </div>
+
                 <div class="project-row row">
                     <div class="col-md-5">
-                        <a href="https://musicians-meetup.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/mm.png" /></a>
+                        <a href="https://www.acer.com/ac/en/US/content/keep-asking" target="_blank"><img class="img-responsive project-img" src="img/work/acer.png" /></a>
                     </div>
                     <div class="project-content col-md-6">
-                        <h3>Musicians Meet-Up -<small><a class="project-links" href="https://github.com/TheCodingCarlson/musicians_meetup"> Github Repo</a></small></h3>
-                        <p>Musicians Meet-Up is an app where musicians of all levels can connect and collaborate. Inspired by aspects of Facebook and Craigslist, users are able sign-up and create a profile. They can create and respond to posts in the Classifieds section and also search through all the users (the community). Made using Express/NodeJS, Sequelize, HTML5, CSS3, JavaScript, jQuery, Bootstrap, Bcrypt, Cloudinary and MailgunJS.</p>
+                        <h3>Acer Keep Asking -<small><a class="project-links" href="https://www.acer.com/ac/en/US/content/keep-asking" target="_blank"> Live Site</a></small></h3>
+                        <p>Part of the Acer site, this section features articles written by tech-savvy moms that give parents advice on how to incorporate tech into family life. Other topics covered include tips for setting tech ground-rules with kids, fun tech ideas and video interviews. I was responsible for the redesign of the landing page and article pages, as well as writing the code for collapsing/expanding articles.</p>
+
+                        <p class="tech-used">Tech Used: HTML5, CSS3, JS, jQuery and Handlebars</p>
                     </div>
                 </div>
+
+                <h2 id="work">Projects/For Fun</h2>
+
+                <!-- Harmonize -->
                 <div class="project-row row">
                     <div class="col-md-5">
-                        <a href="http://thecodingcarlson.github.io/Hangman/" target="_blank"><img class="img-responsive project-img grayscale" src="img/hangman.png" /></a>
+                        <a href="https://harmonize2.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/harmonize.png" /></a>
                     </div>
                     <div class="project-content col-md-6">
-                        <h3>Hangman -<small><a class="project-links" href="https://github.com/TheCodingCarlson/Hangman"> Github Repo</a></small></h3>
-                        <p>This was my first project during my time at General Assembly. I wanted to re-make the classic word guessing game and add a Western twist. My main focus of this project was to make something functional that looked good, but was also fun to play. Made using jQuery, Javascript, CSS3, HTML5, Lazy Line Painter and the Wordnik API.</p>
+                        <h3>Harmonize -<small><a class="project-links" href="https://github.com/TheCodingCarlson/harmonize" target="_blank"> Github</a> | <a class="project-links" href="https://harmonize2.herokuapp.com/" target="_blank">Demo</a></small></h3>
+                        <p>A chord helper app that allows users to pick a starting note and chord quality, and from there suggests chords that make sense to go to next in a progression. I wanted to create a tool for people that know some chords, but aren't sure how to put them together in a practical and musical way. Users can save favorite progressions to their profile for future reference.</p>
+
+                        <p class="tech-used">Tech Used: HTML5, CSS3, JS, Bootstrap3, TeoriaJS, AngularJS, Express/NodeJS and MongoDB/Mongoose</p>
                     </div>
                 </div>
+
+                <!-- Linear Drum Beats -->
                 <div class="project-row row">
                     <div class="col-md-5">
-                        <a href="https://concrt.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/concrt.png" /></a>
+                        <a href="https://linear-drumbeats.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/linear_drumbeats.png" /></a>
+                    </div>
+                    <div class="project-content col-md-6">
+                        <h3>Linear Drum Beats -<small><a class="project-links" href="https://github.com/TheCodingCarlson/linear-drumbeats" target="_blank"> Github</a> | <a class="project-links" href="https://linear-drumbeats.herokuapp.com/" target="_blank">Demo</a></small></h3>
+                        <p>A Linear Drumbeat is a drumbeat where no two sound sources strike at the same time. I made this simple VueJS project to create random linear patterns that I normally wouldn't think of. The app creates and draws the beat using drum notation. Users can also hit the play button to hear how the beat would sound if played by a drummer.</p>
+
+                         <p class="tech-used">Tech Used: HTML5, SCSS, JS, Bootstrap4, VueJS, Gulp and Express/NodeJS</p>
+                    </div>
+                </div>
+
+                <!-- Bog Adventure -->
+                <div class="project-row row">
+                    <div class="col-md-5">
+                        <a href="https://bog-adventure.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/bog_app.png" /></a>
+                    </div>
+                    <div class="project-content col-md-6">
+                        <h3>Bog Adventure -<small><a class="project-links" href="https://github.com/TheCodingCarlson/bog_adventure" target="_blank"> Github</a> | <a class="project-links" href="https://bog-adventure.herokuapp.com/" target="_blank">Demo</a></small></h3>
+                        <p>A simple Ruby on Rails app with CRUD functionality. Users can create and edit bog creatures as well as add tags to each creature. Creatures and tags can also be deleted.</p>
+
+                         <p class="tech-used">Tech Used: HTML5, CSS3, Ruby, Ruby on Rails and Postgres</p>
+                    </div>
+                </div>
+
+                <!-- Hangman -->
+                <template v-if="windowWidth > 992">
+                    <div class="project-row row">
+                        <div class="col-md-5">
+                            <a href="http://thecodingcarlson.github.io/Hangman/" target="_blank"><img class="img-responsive project-img grayscale" src="img/work/hangman.png" /></a>
+                        </div>
+                        <div class="project-content col-md-6">
+                            <h3>Hangman -<small><a class="project-links" href="https://github.com/TheCodingCarlson/Hangman" target="_blank"> Github</a> | <a class="project-links" href="http://thecodingcarlson.github.io/Hangman/" target="_blank"> Demo</a></small></h3>
+                            <p>My first project during my time at General Assembly. I wanted to re-make the classic word guessing game and add a Western twist. The focus of this project was to make something functional that looked good and was also fun to play.</p>
+
+                            <p class="tech-used">Tech Used: HTML5, CSS3, JS, jQuery, Lazy Line Painter and the Wordnik API</p>
+                        </div>
+                    </div>
+                </template>
+
+                <!-- Jeopardy React -->
+                <template v-else>
+                    <div class="project-row row">
+                        <div class="col-md-5">
+                            <a href="http://thecodingcarlson.github.io/jeopardy_react/" target="_blank"><img class="img-responsive project-img" src="img/work/jeopardy.png" /></a>
+                        </div>
+                        <div class="project-content col-md-6">
+                            <h3>Jeopardy React -<small><a class="project-links" href="https://github.com/TheCodingCarlson/jeopardy_react" target="_blank"> Github</a> | <a class="project-links" href="http://thecodingcarlson.github.io/jeopardy_react/" target="_blank"> Demo</a></small></h3>
+                            <p>An infinite scrolling trivia app I made using ReactJS. Random question data is generated from the jService API. Users can swipe back and forth between questions and answers (Please Note: Swiping only works on mobile devices). I used React Infinite to create the infinite scrolling/paging effect.</p>
+
+                            <p class="tech-used">Tech Used: HTML5, CSS3, JS, Bootstrap3, jQuery, ReactJS, React Infinite, Swipe and the jService API</p>
+                        </div>
+                    </div>
+                </template>
+
+
+                <!-- OLD PROJECTS -->
+                <!-- Musicians Meet-Up -->
+                <!-- <div class="project-row row">
+                    <div class="col-md-5">
+                        <a href="https://musicians-meetup.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/mm.png" /></a>
+                    </div>
+                    <div class="project-content col-md-6">
+                        <h3>Musicians Meet-Up -<small><a class="project-links" href="https://github.com/TheCodingCarlson/musicians_meetup" target="_blank"> Github</a> | <a class="project-links" href="https://musicians-meetup.herokuapp.com/" target="_blank"> Demo</a></small></h3>
+                        <p>Musicians Meet-Up is an app where musicians of all levels can connect and collaborate. Inspired by aspects of Facebook and Craigslist, users are able sign-up and create a profile . They can create and respond to posts in the Classifieds section and also search through all users (the community).</p>
+
+                        <p class="tech-used">Tech Used: HTML5, CSS3, JS, jQuery, Bootstrap3, Express/NodeJS, Sequelize, Bcrypt, Cloudinary and MailgunJS</p>
+                    </div>
+                </div> -->
+                <!-- Concrt -->
+                <!-- <div class="project-row row">
+                    <div class="col-md-5">
+                        <a href="https://concrt.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/concrt.png" /></a>
                     </div>
                     <div class="project-content col-md-6">
                         <h3>Concrt -<small><a class="project-links" href="https://github.com/TheCodingCarlson/concrt"> Github Repo</a></small></h3>
                         <p>My first and only group project at GA. Concrt is a full stack web application that allows users to discover and share local concerts using the Jambase API. Concerts can be saved to a user calendar that can be referenced from the user profile. Users can also "follow" eachother and these relationships are displayed on their profile page. Made using Ruby, Rails, PostgreSQL, HTML5, CSS3, JavaScript, jQuery, Bootstrap, D3JS and the Jambase API.</p>
                     </div>
-                </div>
-                <div class="project-row row">
+                </div> -->
+
+                <!-- Last FM D3 -->
+                <!-- <div class="project-row row">
                     <div class="col-md-5">
-                        <a href="https://lastfmd3.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/lastfm.png" /></a>
+                        <a href="https://lastfmd3.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/lastfm.png" /></a>
                     </div>
                     <div class="project-content col-md-6">
                         <h3>Last FM D3 -<small><a class="project-links" href="https://github.com/TheCodingCarlson/music-d3"> Github Repo</a></small></h3>
                         <p>A side project I made to familiarize myself with the basic concepts of D3JS and SVG. I used the Last FM API to obtain the data for my charts and graphs. There are three sections to this project. The first allows you to search bands/artists and then renders a dynamic SVG bar graph of the 10 most popular albums for that artist by play count. The second section renders a bubble chart of the top 10 most popular artists/bands currently being streamed on Last FM. The third section shows a pie chart of the top 10 most played songs on the site. Made using HTML5, CSS3, AngularJS, D3JS, Bootstrap, NodeJS and the Last FM API.</p>
                     </div>
-                </div>
-                <div class="project-row row">
-                    <div class="col-md-5">
-                        <a href="http://thecodingcarlson.github.io/jeopardy_react/" target="_blank"><img class="img-responsive project-img" src="img/jeopardy.png" /></a>
-                    </div>
-                    <div class="project-content col-md-6">
-                        <h3>Jeopardy React -<small><a class="project-links" href="https://github.com/TheCodingCarlson/jeopardy_react"> Github Repo</a></small></h3>
-                        <p>An infinite scrolling trivia app I made using ReactJS. Random question data is generated from the jService API. Users can swipe back and forth between questions and answers (Please Note: Swiping only works on mobile devices). I used React Infinite to create the infinite scrolling/paging effect. Made using ReactJS, React Infinite, Swipe, jService, Bootstrap, Javascript, jQuery, HTML5 and CSS3.</p>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -174,13 +255,13 @@
                 <h2>Contact</h2>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://github.com/TheCodingCarlson"><i class="fa fa-github-square fa-3x"></i></a>
+                        <a href="https://github.com/TheCodingCarlson" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/thecodingcarlson"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                        <a href="https://www.linkedin.com/in/thecodingcarlson" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
                     </li>
                      <li>
-                        <a href="https://www.facebook.com/christianevancarlson"><i class="fa fa-facebook-square fa-3x"></i></a>
+                        <a href="https://www.facebook.com/christianevancarlson" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
                     </li>
                     <li>
                         <a href="mailto:chris.carlson.dev@gmail.com"><i class="fa fa-envelope-square fa-3x"></i></a>
@@ -193,7 +274,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Chris Carlson 2016</p>
+            <p>Copyright &copy; <span id="currentYear"></span> Chris Carlson</p>
         </div>
     </footer>
 
@@ -205,6 +286,12 @@
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
+
+    <!-- VueJS -->
+    <script src="js/vue.js"></script>
+
+    <!-- Mobile JS -->
+    <script src="js/mobile.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>

@@ -22,3 +22,9 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+//Get current year and add to footer
+var d = new Date();
+var year = d.getFullYear();
+
+$('#currentYear').text(year);
