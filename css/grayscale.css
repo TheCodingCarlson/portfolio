@@ -327,8 +327,7 @@ ul.banner-social-buttons {
     }
 
     #work {
-        margin-top: 15px;
-        margin-bottom: -20px;
+        margin-top: 30px;
     }
 }
 
@@ -402,6 +401,10 @@ body {
     font-weight: 400;
 }
 
+.company-link {
+    font-weight: 700;
+}
+
 @media(max-width: 992px) {
     .project-img {
         padding-bottom: 50px;
@@ -418,8 +421,12 @@ body {
         margin-top: 30px;
         margin-bottom: 30px;
     }
-}
 
-.company-link {
-    font-weight: 700;
+    .work-header {
+        padding-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
 }
