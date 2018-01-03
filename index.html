@@ -17,12 +17,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <!-- <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 
     <!-- Font Awesome -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Emoji CSS -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
@@ -98,12 +100,16 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <img id="me" src="img/me.jpg" />
                 <h2>Who Am I?</h2>
-
-                <p class="about">Whether it's playing music or writing code, I am always creating. A drummer turned web dev, I feel that my musical background gives me a unique perspective on the tech industry. I love collaboration and creating as a team. Technologies I have experience with include Javascript, HTML, CSS, jQuery, NodeJS, Express, AngularJS, React, Ruby, Rails, Postgres and SQL.</p>
-
-                <p class="about"><!-- Currenty I work as a Front-End Developer at <a class="company-link" href="http://rationalagency.com/" target="_blank">Rational Interaction</a> in Seattle, WA. --> When I'm not coding you can find me playing music, enjoying the outdoors, or gaming.</p>
-
-                <p class="about tech-used">CURRENTLY LEARNING: VueJS, SCSS/LESS, ES6</p>
+                <p class="about">Whether it's playing music or writing code, I am always creating. A drummer turned web dev, I feel that my musical background gives me a unique perspective on the tech industry. I love collaboration and creating as a team. Technologies I have experience with include Javascript, HTML, CSS, jQuery, NodeJS, Express, React, Angular, Ruby, Rails, Postgres and SQL.</p>
+                <p class="about">When I'm not coding you can find me playing music, enjoying the outdoors, or gaming.</p>
+                <p class="about tech-used">
+                    <i class="em em-computer"></i>
+                    CURRENTLY LEARNING: React, Babel, Webpack
+                </p>
+                <p class="about">
+                    <i class="em em-video_game"></i>
+                    CURRENTLY PLAYING: The Legend of Zelda: Breath of the Wild
+                </p>
             </div>
         </div>
     </section>
@@ -114,17 +120,17 @@
             <div class="container">
                 <h2 class="work-header" id="work">Work</h2>
 
-              <!--   <div class="project-row row">
+                <div class="project-row row">
                     <div class="col-md-5">
-                        <a href="http://www.microsoftpartnersolutions.com/" target="_blank"><img class="img-responsive project-img" src="img/work/modern_retailer.jpg" /></a>
+                        <a href="https://www.azure.microsoft.com/" target="_blank"><img class="img-responsive project-img" src="img/work/azure.jpg" /></a>
                     </div>
                     <div class="project-content col-md-6">
-                        <h3>The Modern Retailer -<small><a class="project-links" href="http://www.microsoftpartnersolutions.com/" target="_blank"> Live Site</a></small></h3>
-                        <p>A portal created to help direct business towards various MSFT partners. The site consists of a landing page, an assessment, and 6 partner pages. The assessment uses VueJS to dynamically take in user input and create percentages on how effective their business is in a certain category. I was responsible for the front-end code, making sure that the creative team's design came to life in a practical and meaningful way.</p>
+                        <h3>Azure Marketing Website -<small><a class="project-links" href="https://www.azure.microsoft.com/" target="_blank"> Live Site</a></small></h3>
+                        <p>I was part the dev team that owned this site and helped launch key features including: The <a href="https://azure.microsoft.com/en-us/try/cognitive-services/" class="content-link">Cognitive Services Try Experience</a>, <a href="http://azure.microsoft.com/training" class="content-link">Training Section</a>, and <a href="https://azure.microsoft.com/solutions/architecture/onboarding-customers-with-a-cloud-native-serverless-architecture/" class="content-link">Solution Architecture</a> redesign. I contributed to many other areas of the site and created new components for Sundog, our in house front-end framework, that are used throughout. I was also part of an accessiblity team that was tasked with going through the entire site and updating as necessary to meet accessibility standards.</p> 
 
-                        <p class="tech-used">Tech Used: HTML5, LESS, JS, Bootstrap4, JQuery, VueJS, Handlebars, Gulp, Roots, Contentful, ParsleyJS</p>
+                        <p class="tech-used">Tech Used: C#, ASP.net, JS, jQuery, Razor, React</p>
                     </div>
-                </div> -->
+                </div>
 
                 <div class="project-row row">
                     <div class="col-md-5">
@@ -140,6 +146,21 @@
 
                 <h2 class="work-header">Projects/For Fun</h2>
 
+                <!-- React OMDB Movie Search App -->
+                <div class="project-row row">
+                    <div class="col-md-5">
+                        <a href="https://react-omdb-movie-search.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/omdb.jpg" /></a>
+                    </div>
+                    <div class="project-content col-md-6">
+                        <h3>React Movie Search App -<small><a class="project-links" href="https://github.com/TheCodingCarlson/react-omdb-app" target="_blank"> Github</a> | <a class="project-links" href="https://react-omdb-movie-search.herokuapp.com/" target="_blank">Demo</a></small></h3>
+
+                        <p>I created a few adaptations of this app during my time at <a class="content-link" href="https://generalassemb.ly/">General Assembly Seattle</a> and recently decided to create a React version using Babel, Webpack, and some new features of ES2017. It's a simple app that allows users to search the OMDB movie database using keywords. Each successful query returns up to 10 results. Users can then click on a result card to see more information on a particular film.</p>
+
+                         <p class="tech-used">Tech Used: React, Babel, Webpack, Materialize, Node/Express, OMDB API</p>
+                    </div>
+                </div>
+
+                <!-- Pokemon ES6 App -->
                 <div class="project-row row">
                     <div class="col-md-5">
                         <a href="https://pokemon-es6-app.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/pokemon.png" /></a>
@@ -203,54 +224,6 @@
                         <p class="tech-used">Tech Used: HTML5, CSS3, JS, jQuery, Lazy Line Painter, Wordnik API</p>
                     </div>
                 </div>
-
-                <!-- Jeopardy React -->
-                <div class="project-row row">
-                    <div class="col-md-5">
-                        <a href="http://thecodingcarlson.github.io/jeopardy_react/" target="_blank"><img class="img-responsive project-img" src="img/work/jeopardy.png" /></a>
-                    </div>
-                    <div class="project-content col-md-6">
-                        <h3>Jeopardy React -<small><a class="project-links" href="https://github.com/TheCodingCarlson/jeopardy_react" target="_blank"> Github</a> | <a class="project-links" href="http://thecodingcarlson.github.io/jeopardy_react/" target="_blank"> Demo</a></small></h3>
-                        <p>An infinite scrolling trivia app I made using ReactJS. Random question data is generated from the jService API. Users can swipe back and forth between questions and answers (Please Note: Swiping only works on mobile devices). I used React Infinite to create the infinite scrolling/paging effect.</p>
-
-                        <p class="tech-used">Tech Used: HTML5, CSS3, JS, Bootstrap3, jQuery, ReactJS, React Infinite, Swipe, jService API</p>
-                    </div>
-                </div>
-                
-                <!-- OLD PROJECTS -->
-                <!-- Musicians Meet-Up -->
-                <!-- <div class="project-row row">
-                    <div class="col-md-5">
-                        <a href="https://musicians-meetup.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/mm.jpg" /></a>
-                    </div>
-                    <div class="project-content col-md-6">
-                        <h3>Musicians Meet-Up -<small><a class="project-links" href="https://github.com/TheCodingCarlson/musicians_meetup" target="_blank"> Github</a> | <a class="project-links" href="https://musicians-meetup.herokuapp.com/" target="_blank"> Demo</a></small></h3>
-                        <p>Musicians Meet-Up is an app where musicians of all levels can connect and collaborate. Inspired by aspects of Facebook and Craigslist, users are able sign-up and create a profile . They can create and respond to posts in the Classifieds section and also search through all users (the community).</p>
-
-                        <p class="tech-used">Tech Used: HTML5, CSS3, JS, jQuery, Bootstrap3, Express/NodeJS, Sequelize, Bcrypt, Cloudinary and MailgunJS</p>
-                    </div>
-                </div> -->
-                <!-- Concrt -->
-                <!-- <div class="project-row row">
-                    <div class="col-md-5">
-                        <a href="https://concrt.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/concrt.jpg" /></a>
-                    </div>
-                    <div class="project-content col-md-6">
-                        <h3>Concrt -<small><a class="project-links" href="https://github.com/TheCodingCarlson/concrt"> Github Repo</a></small></h3>
-                        <p>My first and only group project at GA. Concrt is a full stack web application that allows users to discover and share local concerts using the Jambase API. Concerts can be saved to a user calendar that can be referenced from the user profile. Users can also "follow" eachother and these relationships are displayed on their profile page. Made using Ruby, Rails, PostgreSQL, HTML5, CSS3, JavaScript, jQuery, Bootstrap, D3JS and the Jambase API.</p>
-                    </div>
-                </div> -->
-
-                <!-- Last FM D3 -->
-                <!-- <div class="project-row row">
-                    <div class="col-md-5">
-                        <a href="https://lastfmd3.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="img/work/lastfm.jpg" /></a>
-                    </div>
-                    <div class="project-content col-md-6">
-                        <h3>Last FM D3 -<small><a class="project-links" href="https://github.com/TheCodingCarlson/music-d3"> Github Repo</a></small></h3>
-                        <p>A side project I made to familiarize myself with the basic concepts of D3JS and SVG. I used the Last FM API to obtain the data for my charts and graphs. There are three sections to this project. The first allows you to search bands/artists and then renders a dynamic SVG bar graph of the 10 most popular albums for that artist by play count. The second section renders a bubble chart of the top 10 most popular artists/bands currently being streamed on Last FM. The third section shows a pie chart of the top 10 most played songs on the site. Made using HTML5, CSS3, AngularJS, D3JS, Bootstrap, NodeJS and the Last FM API.</p>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -296,6 +269,5 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
-
 </body>
 </html>
