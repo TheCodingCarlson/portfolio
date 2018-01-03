@@ -367,9 +367,7 @@ body {
 
 .project-img {
     filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);  /* For Webkit browsers */
-    filter: none;  /* For IE 6 - 9 */
-    -webkit-transition: all .4s ease;  /* Transition for Webkit browsers */
+    transition: all .4s ease;
 }
 
 .project-img:hover {
@@ -394,6 +392,16 @@ body {
 .project-links {
     color: white;
     font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.content-link {
+    color: white;
+    text-decoration: underline;
+}
+
+.content-link:hover {
+    color: #337ab7;
+    text-decoration: underline;
 }
 
 .tech-used {
