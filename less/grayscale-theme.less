@@ -1,12 +1,11 @@
-@import "variables.less";
-@import "mixins.less";
+@import 'variables.less';
 
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: white;
-    background-color: black;
+    font-family: @open-sans;
+    font-size: 16px;
+    color: @dark-blue;
 }
 
 html {
@@ -20,104 +19,97 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    margin: 0 0 16px 0;
+    font-family: @philosopher;
     letter-spacing: 1px;
 }
 
 p {
-    margin: 0 0 25px;
-    font-size: 18px;
-    line-height: 1.5;
-    @media(min-width:768px) {
-        margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
-    }
+    margin: 0 0 16px;
+    line-height: 1.6;
 }
 
 a {
-    color: @primary;
+    color: @white;
+    text-decoration: underline;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+
     &:hover,
     &:focus {
-        text-decoration: none;
-        color: darken(@primary,20%);
+        color: @light-blue;
     }
-}
-
-.light {
-    font-weight: 400;
 }
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid fade(white, 30%);
+    background: rgba(182, 214, 232, 0.95);
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: black;
-    .navbar-brand {
-        font-weight: 700;
-        &:focus {
-            outline: none;
-        }
+
+    .navbar-brand { 
+        color: @orange;
+        font-family: @philosopher;
+
         .navbar-toggle {
             padding: 4px 6px;
             font-size: 16px;
-            color: white;
+            color: @dark-blue;
+
             &:focus,
             &:active {
-                outline: none;
+                outline: 0;
             }
         }
     }
+
     a {
-        color: white;
+        color: @black;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
+
     .nav {
         li {
             a {
                 -webkit-transition: background .3s ease-in-out;
                 -moz-transition: background .3s ease-in-out;
                 transition: background .3s ease-in-out;
-                &:hover {
-                    color: fade(white, 80%);
-                    outline: none;
-                    background-color: transparent;
-                }
+
                 &:focus,
+                &:hover,
                 &:active {
-                    outline: none;
+                    outline: 0;
                     background-color: transparent;
+                    text-decoration: underline;
                 }
             }
+
             &.active {
-                outline: none;
+                outline: 0;
+
                 a {
-                    background-color: fade(white, 30%);
-                    &:hover {
-                        color: white;
-                    }
+                    background-color: rgba(255,255,255,.3);
                 }
             }
         }
     }
-    @media(min-width:768px) {
+
+    @media(min-width: @resolution-medium) {
         padding: 20px 0;
-        border-bottom: none;
+        border-bottom: 0;
         letter-spacing: 1px;
-        background: transparent;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+
         &.top-nav-collapse {
             padding: 0;
-            background: black;
-            border-bottom: 1px solid fade(white, 30%);
+            background: rgba(182, 214, 232, 1);
+            border-bottom: 1px solid rgba(255,255,255,.3);
         }
     }
 }
@@ -128,32 +120,40 @@ a {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: white;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: black;
+    color: @white;
+    background: url(../img/hero.png) no-repeat bottom center scroll;
+    background-color: @black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
     .intro-body {
         display: table-cell;
         vertical-align: middle;
+
         .brand-heading {
             font-size: 40px;
+            color: @orange;
         }
+
         .intro-text {
             font-size: 18px;
+            color: @black;
         }
     }
-    @media(min-width:768px) {
+
+    @media(min-width: @resolution-medium) {
         height: 100%;
         padding: 0;
+
         .intro-body {
             .brand-heading {
-                font-size: 100px;
+                font-size: 50px;
             }
+
             .intro-text {
-                font-size: 26px;
+                font-size: 20px;
             }
         }
     }
@@ -164,26 +164,27 @@ a {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid white;
+    border: 2px solid @black;
     border-radius: 100% !important;
     font-size: 40px;
-    color: white;
-    background: transparent;
+    color: @black;
+    background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+
     &:hover,
     &:focus {
-        outline: none;
-        color: white;
-        background: fade(white, 10%);
+        outline: 0;
     }
+
     i.animated {
         -webkit-transition-property: -webkit-transform;
         -webkit-transition-duration: 1s;
         -moz-transition-property: -moz-transform;
         -moz-transition-duration: 1s;
     }
+
     &:hover {
         i.animated {
             -webkit-animation-name: pulse;
@@ -232,46 +233,9 @@ a {
     }
 }
 
-.content-section {
-    padding-top: 100px;
-}
-
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: white;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-}
-
-@media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
-    }
-
-    .download-section {
-        padding: 100px 0;
-    }
-
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
-}
-
 .btn {
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: @open-sans;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -279,29 +243,19 @@ a {
     border-radius: 0;
 }
 
-.btn-default {
-    border: 1px solid @primary;
-    color: @primary;
-    background-color: transparent;
-    &:hover,
-    &:focus {
-        border: 1px solid @primary;
-        outline: none;
-        color: black;
-        background-color: @primary;
-    }
-}
-
 ul.banner-social-buttons {
     margin-top: 0;
+
     @media(max-width:1199px) {
-        margin-top: 15px;
+        margin-top: 40px;
     }
-    @media(max-width:767px) {
+
+    @media(max-width: @resolution-medium) {
         li {
             display: block;
             margin-bottom: 20px;
             padding: 0;
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -311,31 +265,33 @@ ul.banner-social-buttons {
 
 footer {
     padding: 50px 0;
+
     p {
         margin: 0;
+        font-size: 1.5rem;
     }
 }
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: fade(white, 20%);
+    background: @white;
+    background: rgba(255,255,255,.2);
 }
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: fade(white, 20%);
+    background: @white;;
+    background: rgba(255,255,255,.2);
 }
 
 img::selection {
-    background: transparent;
+    background: 0 0;
 }
 
 img::-moz-selection {
-    background: transparent;
+    background: 0 0;
 }
 
 body {
-    webkit-tap-highlight-color: fade(white, 20%);
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
 }

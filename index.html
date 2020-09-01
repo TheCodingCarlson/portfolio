@@ -7,26 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Code portfolio for Seattle based Software Engineer, Chris Carlson">
     <meta name="keywords" content="coder, programer, software engineer, web development, web developer, full-stack engineer, front-end, full-stack developer, seattle, design, responsive web">
-    <meta name="author" content="Chris Carlson - Software Engineer">
+    <meta name="author" content="Chris Carlson | Software Engineer">
 
     <!-- Title and Favicon -->
     <title>Chris Carlson - Creator of Things</title>
     <link rel="shortcut icon" type="image/x-icon" href="/img/laptop_favicon.png">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous" />
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Philosopher&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Emoji CSS -->
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="less/styles.less" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -67,7 +67,7 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="resume.pdf" target="_blank">Resume</a>
+                        <a class="page-scroll" href="/resume.pdf" target="_blank">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -94,121 +94,124 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <section id="about" class="container-fluid content-section text-center content-section--about" aria-label="About Chris Carlson">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-md-8 col-md-offset-2">
                 <img id="me" src="img/me.jpg" loading="lazy" alt="Chris Carlson - Software Engineer" />
-                <p class="about">Whether it's playing music or writing code, I am always creating. A drummer turned web dev, I feel that my musical background helps me bring a unique perspective to every project I take on. I love collaboration and creating as a team. Technologies I have experience with include ASP.NET, C#, Javascript, HTML, CSS and React.</p>
-                <p class="about">When I'm not coding you can find me playing music, enjoying the outdoors, cooking or gaming.</p>
-                <p class="about tech-used">
+
+                <p>Whether it's playing music or writing code, I am always creating. A drummer turned web dev, I feel that my musical background helps me bring a unique perspective to every project I take on. I love collaboration and creating as a team. Technologies I have experience with include ASP.NET, C#, Javascript, HTML, CSS and React.</p>
+
+                <p>When I'm not coding you can find me playing music, enjoying the outdoors, cooking or gaming.</p>
+
+                <p>
                     <i class="em em-computer"></i>
-                    What am I learning?: .NET Core
+                    What am I learning? .NET Core
                 </p>
-                <p class="about">
+
+                <p>
                     <i class="em em-video_game"></i>
-                    What I am I playing?: Luigi's Mansion 3 <i class="em em-ghost" aria-role="presentation" aria-label="GHOST"></i>
+                    What I am I playing? Luigi's Mansion 3 <i class="em em-ghost" aria-role="presentation" aria-label="GHOST"></i>
                 </p>
-                <p class="about">
+
+                <p>
                     <i class="em em-notes" aria-role="presentation" aria-label="MULTIPLE MUSICAL NOTES"></i>
-                    What I am I listening to?: <a href="https://open.spotify.com/album/61ouYBX1skZYiuv5EHnmEK" aria-label="Whitney - Candid">Whitney - Candid</a> and <a href="https://open.spotify.com/album/0pILyYJr65rEAWnogtd8Xt" aria-label="Ruston Kelly - Shape & Destroy">Ruston Kelly - Shape & Destroy</a>
+                    What I am I listening to? <a href="https://open.spotify.com/album/61ouYBX1skZYiuv5EHnmEK" aria-label="Whitney - Candid">Whitney - Candid</a> and <a href="https://open.spotify.com/album/0pILyYJr65rEAWnogtd8Xt" aria-label="Ruston Kelly - Shape & Destroy">Ruston Kelly - Shape & Destroy</a>
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Work Section -->
-    <section id="work" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <h2 class="work-header" id="work">Work</h2>
+    <!-- Code Section -->
+    <section id="work" class="container-fluid content-section text-center content-section--code" aria-label="Coding Work and Projects">
+        <div class="container">
+            <h2 id="work">Professional</h2>
 
-                <div class="project-row row">
-                    <div class="col-md-5">
-                        <a href="https://www.azure.microsoft.com/" target="_blank"><img class="img-responsive project-img" src="./img/work/azure.JPG" /></a>
-                    </div>
-                    <div class="project-content col-md-6">
-                        <h3>Azure Marketing Website -<small><a class="project-links" href="https://www.azure.microsoft.com/" target="_blank"> Live Site</a></small></h3>
-                        <p>I currently work on the dev team that owns this site and have helped launch key features including: The <a href="https://azure.microsoft.com/overview/" class="content-link" target="_blank">The Azure Overview Experience</a>, <a href="https://azure.microsoft.com/overview/azure-hybrid/" class="content-link" target="_blank">The Azure Hybrid Experience</a>, and our <a href="https://azure.microsoft.com/solutions/architecture/" class="content-link" target="_blank">Solution Architecture templating</a>. I also helped build Sundog, our in house front-end framework. This framework is now being consumed by other teams at Microsoft and I continue to contribute to and make improvements frequently. In addition, I help maintain a group of smaller sites that we own, like <a href="https://startups.microsoft.com/" class="content-link" target="_blank">Microsoft for Startups</a>.</p>
-
-                        <p class="tech-used">Tech Used: C#, ASP.NET, JS, jQuery, Razor, React, LESS</p>
-                    </div>
+            <!-- Microsoft Azure -->
+            <div class="project-row row">
+                <div class="col-md-5">
+                    <a class="card-img" href="https://www.azure.microsoft.com/" target="_blank">
+                        <img class="img-responsive project-img" src="./img/work/azure.JPG" loading="lazy" alt="Microsoft Azure Website" />
+                        <div class="details">
+                            <span class="text">Let's Go!</span>
+                        </div>
+                    </a>
                 </div>
 
-                <h2 class="work-header">Projects/For Fun</h2>
+                <div class="project-content col-md-6">
+    
+                    <h3>Azure Marketing Website</h3>
 
-                <!-- React OMDB Movie Search App -->
-                <div class="project-row row">
-                    <div class="col-md-5">
-                        <a href="https://react-omdb-movie-search.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="./img/work/omdb.JPG" /></a>
-                    </div>
-                    <div class="project-content col-md-6">
-                        <h3>React Movie Search App -<small><a class="project-links" href="https://github.com/TheCodingCarlson/react-omdb-app" target="_blank"> Github</a> | <a class="project-links" href="https://react-omdb-movie-search.herokuapp.com/" target="_blank">Demo</a></small></h3>
+                    <p><a class="project-link" href="https://www.azure.microsoft.com/" target="_blank">Live Site</a></p>
 
-                        <p>I created a few adaptations of this app during my time at <a class="content-link" href="https://generalassemb.ly/">General Assembly Seattle</a> and recently decided to create a React version using Babel, Webpack, and some new features of ES2017. It's a simple app that allows users to search the OMDB movie database using keywords. Each successful query returns up to 10 results. Users can then click on a result card to see more information on a particular film.</p>
+                    <p>I currently work on the dev team that owns this site and have helped launch key features including: The <a href="https://azure.microsoft.com/overview/" class="content-link" target="_blank">The Azure Overview Experience</a>, <a href="https://azure.microsoft.com/overview/azure-hybrid/" class="content-link" target="_blank">The Azure Hybrid Experience</a>, and our <a href="https://azure.microsoft.com/solutions/architecture/" class="content-link" target="_blank">Solution Architecture templating</a>. I also helped build Sundog, our in house front-end framework. This framework is now being consumed by other teams at Microsoft and I continue to contribute to and make improvements frequently. In addition, I help maintain a group of smaller sites that we own, like <a href="https://startups.microsoft.com/" class="content-link" target="_blank">Microsoft for Startups</a>.</p>
 
-                         <p class="tech-used">Tech Used: React, Babel, Webpack, Materialize, Node/Express, OMDB API</p>
-                    </div>
+                    <p>Tech Used: C#, ASP.net, JS, jQuery, Razor, React, Less</p>
                 </div>
+            </div>
 
-                <!-- Pokemon ES6 App -->
-                <div class="project-row row">
-                    <div class="col-md-5">
-                        <a href="https://pokemon-es6-app.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="./img/work/pokemon.png" /></a>
-                    </div>
-                    <div class="project-content col-md-6">
-                        <h3>ES6 Pokemon App -<small><a class="project-links" href="https://github.com/TheCodingCarlson/pokemon_es6_app" target="_blank"> Github</a> | <a class="project-links" href="https://pokemon-es6-app.herokuapp.com/" target="_blank">Demo</a></small></h3>
-                        <p>A simple pokemon app that utilizes new technologies including ES6, Flexbox and new CSS3 features. Search for info on a specific Pokemon or build an effective team against certain types of Pokemon. Made using the <a class="project-links" href="https://pokeapi.co/">Pokemon API</a>. Features used include: arrow functions, const/let, promises (asynchronous API calls), spread operator, fetch, css variables, and fetch.</p>
+            <h2>Personal Projects</h2>
 
-                         <p class="tech-used">Tech Used: HTML5, CSS3, JS(ES6), Handlebars, Node/Express</p>
-                    </div>
+            <!-- React OMDB Movie Search App -->
+            <div class="project-row row">
+                <div class="col-md-5">
+                    <a class="card-img" href="https://react-omdb-movie-search.herokuapp.com/" target="_blank">
+                        <img class="img-responsive project-img" src="./img/work/omdb.JPG" loading="lazy" alt="React Movie Search App" />
+                        <div class="details">
+                            <span class="text">Let's Go!</span>
+                        </div>
+                    </a>
                 </div>
+                <div class="project-content col-md-6">
+                    <h3>React Movie Search App</h3>
 
-                <!-- Linear Drum Beats -->
-                <div class="project-row row">
-                    <div class="col-md-5">
-                        <a href="https://linear-drumbeats.herokuapp.com/" target="_blank"><img class="img-responsive project-img" src="./img/work/linear_drumbeats.jpg" /></a>
-                    </div>
-                    <div class="project-content col-md-6">
-                        <h3>Linear Drum Beats -<small><a class="project-links" href="https://github.com/TheCodingCarlson/linear-drumbeats" target="_blank"> Github</a> | <a class="project-links" href="https://linear-drumbeats.herokuapp.com/" target="_blank">Demo</a></small></h3>
-                        <p>A Linear Drumbeat is a drumbeat where no two sound sources strike at the same time. I made this simple VueJS project to create random linear patterns that I normally wouldn't think of. The app creates and draws the beat using drum notation. Users can also hit the play button to hear how the beat would sound if played by a drummer.</p>
+                    <p><a class="project-link" href="https://github.com/TheCodingCarlson/react-omdb-app" target="_blank">Code</a> | <a class="project-link" href="https://react-omdb-movie-search.herokuapp.com/" target="_blank">Demo</a></p>
 
-                         <p class="tech-used">Tech Used: HTML5, SCSS, JS, Bootstrap4, VueJS, Gulp, Express/NodeJS</p>
-                    </div>
+                    <p>I created a few adaptations of this app during my time at <a class="content-link" href="https://generalassemb.ly/">General Assembly Seattle</a> and recently decided to create a React version using Babel, Webpack, and some new features of ES2017. It's a simple app that allows users to search the OMDB movie database using keywords. Each successful query returns up to 10 results. Users can then click on a result card to see more information on a particular film.</p>
+
+                    <p>Tech Used: React, Babel, Webpack, Materialize, Node/Express, OMDB API</p>
                 </div>
+            </div>
 
-                <!-- Hangman -->
-                <!-- <div class="project-row row">
-                    <div class="col-md-5">
-                        <a href="http://thecodingcarlson.github.io/Hangman/" target="_blank"><img class="img-responsive project-img grayscale" src="./img/work/hangman.jpg" /></a>
-                    </div>
-                    <div class="project-content col-md-6">
-                        <h3>Hangman -<small><a class="project-links" href="https://github.com/TheCodingCarlson/Hangman" target="_blank"> Github</a> | <a class="project-links" href="http://thecodingcarlson.github.io/Hangman/" target="_blank"> Demo</a></small></h3>
-                        <p>My first project during my time at General Assembly. I wanted to re-make the classic word guessing game and add a Western twist. The focus of this project was to make something functional that looked good and was also fun to play.</p>
+            <!-- Pokemon ES6 App -->
+            <div class="project-row row">
+                <div class="col-md-5">
+                    <a class="card-img" href="https://pokemon-es6-app.herokuapp.com/" target="_blank">
+                        <img class="img-responsive project-img" src="./img/work/pokemon.png" loading="lazy" alt="ES6 Pokemon App" />
+                        <div class="details">
+                            <span class="text">Let's Go!</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-content col-md-6">
+                    <h3>ES6 Pokemon App</h3>
 
-                        <p class="tech-used">Tech Used: HTML5, CSS3, JS, jQuery, Lazy Line Painter, Wordnik API</p>
-                    </div>
-                </div> -->
+                    <p><a class="project-link" href="https://github.com/TheCodingCarlson/pokemon_es6_app" target="_blank">Code</a> | <a class="project-link" href="https://pokemon-es6-app.herokuapp.com/" target="_blank">Demo</a></p>
+
+                    <p>A simple pokemon app that utilizes new technologies including ES6, Flexbox and new CSS3 features. Search for info on a specific Pokemon or build an effective team against certain types of Pokemon. Made using the <a class="project-links" href="https://pokeapi.co/">Pokemon API</a>. Features used include: arrow functions, const/let, promises (asynchronous API calls), spread operator, fetch, css variables, and fetch.</p>
+
+                    <p>Tech Used: HTML, CSS, JS(ES6), Handlebars, Node/Express</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <section id="contact" class="container-fluid content-section text-center content-section--contact" aria-label="Contact information">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact</h2>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://github.com/TheCodingCarlson" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+                        <a href="https://github.com/TheCodingCarlson" target="_blank" title="Github Profile"><i class="fa fa-github-square fa-3x"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/thecodingcarlson" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                        <a href="https://www.linkedin.com/in/thecodingcarlson" target="_blank" title="LinkedIn Profile"><i class="fa fa-linkedin-square fa-3x"></i></a>
                     </li>
                      <li>
-                        <a href="https://www.facebook.com/christianevancarlson" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
+                        <a href="https://www.facebook.com/christianevancarlson" target="_blank" title="Facebook Profile"><i class="fa fa-facebook-square fa-3x"></i></a>
                     </li>
                     <li>
-                        <a href="mailto:chris.carlson.dev@gmail.com"><i class="fa fa-envelope-square fa-3x"></i></a>
+                        <a href="mailto:chris.carlson.dev@gmail.com" title="Send Chris an Email"><i class="fa fa-envelope-square fa-3x"></i></a>
                     </li>
                 </ul>
             </div>
@@ -222,16 +225,16 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery Easing JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <!-- Custom JS -->
+    <script src="js/index.js"></script>
 </body>
 </html>
