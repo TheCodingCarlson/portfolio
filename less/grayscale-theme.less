@@ -5,7 +5,7 @@ body {
     height: 100%;
     font-family: @open-sans;
     font-size: 16px;
-    color: @dark-blue;
+    color: @black;
 }
 
 html {
@@ -30,16 +30,10 @@ p {
 }
 
 a {
-    color: @white;
     text-decoration: underline;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-
-    &:hover,
-    &:focus {
-        color: @light-blue;
-    }
 }
 
 .navbar-custom {
@@ -48,9 +42,6 @@ a {
     text-transform: uppercase;
 
     .navbar-brand { 
-        color: @orange;
-        font-family: @philosopher;
-
         .navbar-toggle {
             padding: 4px 6px;
             font-size: 16px;
@@ -244,11 +235,7 @@ a {
 }
 
 ul.banner-social-buttons {
-    margin-top: 0;
-
-    @media(max-width:1199px) {
-        margin-top: 40px;
-    }
+    margin-top: 45px;
 
     @media(max-width: @resolution-medium) {
         li {

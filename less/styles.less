@@ -30,15 +30,29 @@ img {
     font-size: 14px;
 }
 
-.content-section--about,
-.content-section--contact {
+.content-section--light {
     background-color: @gray;
 
     a {
-        color: @dark-blue;
+        color: @black;
 
-        &:hover {
-            color: @black;
+        &:hover,
+        &:focus {
+            color: #000000;
+        }
+    }
+}
+
+.content-section--dark {
+    background-color: @black;
+    color: @white;
+
+    a {
+        color: @white;
+
+        &:hover,
+        &:focus {
+            color: @light-blue;
         }
     }
 }
@@ -46,15 +60,6 @@ img {
 .content-section--about {
     border-top: 2px solid @black;
     padding-bottom: 50px;
-}
-
-.content-section--code {
-    background-color: @black;
-    color: @white;
-}
-
-footer {
-    background-color: @gray;
 }
 
 .card-img {
@@ -143,6 +148,10 @@ footer {
             transition-delay: 0.15s;
         }
     }
+}
+
+.link--small {
+    font-size: 12px;
 }
   
 
