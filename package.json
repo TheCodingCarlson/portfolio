@@ -1,0 +1,24 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "Code portfolio site for Seattle-based Software Engineer, Chris Carlson",
+    "main": "index.js",
+    "scripts": {
+        "dev": "parcel index.html",
+        "build": "parcel build index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TheCodingCarlson/portfolio.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/TheCodingCarlson/portfolio/issues"
+    },
+    "homepage": "https://github.com/TheCodingCarlson/portfolio#readme",
+    "devDependencies": {
+        "less": "^3.12.2",
+        "parcel": "^1.12.4"
+    }
+}
