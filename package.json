@@ -1,24 +1,29 @@
 {
-    "name": "portfolio",
-    "version": "1.0.0",
-    "description": "Code portfolio site for Seattle-based Software Engineer, Chris Carlson",
-    "main": "index.js",
-    "scripts": {
-        "dev": "parcel index.html",
-        "build": "parcel build index.html"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/TheCodingCarlson/portfolio.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/TheCodingCarlson/portfolio/issues"
-    },
-    "homepage": "https://github.com/TheCodingCarlson/portfolio#readme",
-    "devDependencies": {
-        "less": "^3.12.2",
-        "parcel": "^1.12.4"
-    }
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Code portfolio site for Seattle-based Software Engineer, Chris Carlson",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url https://thecodingcarlson.com/ && cp CNAME ./dist",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCodingCarlson/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheCodingCarlson/portfolio/issues"
+  },
+  "homepage": "https://github.com/TheCodingCarlson/portfolio#readme",
+  "devDependencies": {
+    "less": "^3.12.2",
+    "parcel": "^1.12.4"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
